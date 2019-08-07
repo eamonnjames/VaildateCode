@@ -4,7 +4,6 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
-using CodeVaildation.Models;
 using System.Xml;
 using System.IO;
 using System.Xml.Schema;
