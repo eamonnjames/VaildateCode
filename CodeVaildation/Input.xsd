@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InputDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DeclarationList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Declaration">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DeclarationHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Jurisdiction" type="xs:string" />
+                          <xs:element name="CWProcedure" type="xs:string" />
+                          <xs:element name="DeclarationDestination" type="xs:string" />
+                          <xs:element name="DocumentRef" type="xs:string" />
+                          <xs:element name="SiteID" type="xs:string" />
+                          <xs:element name="AccountCode" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Command" type="xs:string" use="required" />
+                  <xs:attribute name="Version" type="xs:decimal" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
