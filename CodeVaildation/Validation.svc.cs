@@ -39,7 +39,6 @@ namespace CodeVaildation
             {
                 return -3;
             }
-            return -3;
         }
 
         private bool VaildateXml(XmlElement xml)
